@@ -128,19 +128,12 @@ export function InsuranceInfo() {
               <FileText className="w-5 h-5 text-orange-600" />
               Im Schadensfall
             </h4>
-            <div className="space-y-2 text-sm text-gray-700 mb-4">
+            <div className="space-y-2 text-sm text-gray-700">
               <p>1. Dokumentiere den Schaden mit Fotos</p>
               <p>2. Melde den Vorfall innerhalb von 24h über die App</p>
               <p>3. Fülle den Schadensbericht online aus</p>
               <p>4. Unser Team bearbeitet deinen Fall innerhalb von 2 Werktagen</p>
             </div>
-            <button 
-              onClick={() => setShowClaimModal(true)}
-              className="w-full px-4 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors font-medium flex items-center justify-center gap-2"
-            >
-              <FileText className="w-5 h-5" />
-              Schaden jetzt melden
-            </button>
           </div>
 
           {/* Contact */}
@@ -156,9 +149,17 @@ export function InsuranceInfo() {
           </div>
 
           {/* Download Documents */}
-          <div className="flex gap-3">
-            <button className="flex-1 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors text-sm font-medium">
-              📄 Versicherungsdetails PDF
+          <div className="flex flex-col sm:flex-row gap-3">
+            <button className="flex-1 px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg transition-colors text-sm font-medium flex items-center justify-center gap-2">
+              <FileText className="w-4 h-4" />
+              Versicherungsdetails PDF
+            </button>
+            <button 
+              onClick={() => setShowClaimModal(true)}
+              className="flex-1 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors text-sm font-medium flex items-center justify-center gap-2"
+            >
+              <AlertCircle className="w-4 h-4" />
+              Schaden jetzt melden
             </button>
           </div>
         </div>

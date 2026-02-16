@@ -1,4 +1,5 @@
 import logo from 'figma:asset/919c689e1e910dcd8bee9571561898173173a8aa.png';
+import paymentMethodsImage from 'figma:asset/8716b5fd9f663310bf649c8420c09fefa2f8bad8.png';
 
 interface FooterProps {
   onNavigate: (page: string) => void;
@@ -6,7 +7,7 @@ interface FooterProps {
 
 export function Footer({ onNavigate }: FooterProps) {
   return (
-    <footer className="bg-white border-t border-gray-200 mt-12 mb-20">
+    <footer className="bg-white border-t border-gray-200 mt-12 mb-32">{/* Changed from mb-20 to mb-32 */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -70,6 +71,14 @@ export function Footer({ onNavigate }: FooterProps) {
             <div className="text-center md:text-left">
               <p className="text-sm font-semibold text-gray-700 mb-2">Akzeptierte Zahlungsmethoden</p>
               <div className="flex items-center gap-4 flex-wrap justify-center md:justify-start">
+                {/* Payment Methods Image */}
+                <img 
+                  src={paymentMethodsImage} 
+                  alt="Zahlungsmethoden" 
+                  className="h-10 w-auto"
+                  style={{ objectFit: 'contain' }}
+                />
+                
                 {/* TWINT */}
                 <div className="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold text-sm">
                   TWINT

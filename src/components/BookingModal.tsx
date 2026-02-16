@@ -177,13 +177,17 @@ export function BookingModal({ ride, onClose, onConfirm }: BookingModalProps) {
                         <span>+ Plattformgebühr (15%):</span>
                         <span className="font-medium">CHF {platformFee.toFixed(2)}</span>
                       </div>
+                      <div className="flex justify-between text-xs text-blue-700">
+                        <span>+ Versicherungszuschlag:</span>
+                        <span className="font-medium">CHF {insuranceSurcharge.toFixed(2)}</span>
+                      </div>
                       <div className="flex justify-between text-base font-bold text-orange-600 pt-2 border-t border-blue-300">
                         <span>Finaler Preis pro Person:</span>
                         <span>CHF {totalPricePerSeat.toFixed(2)}</span>
                       </div>
                     </div>
                     <p className="text-xs text-blue-700 mt-2 italic">
-                      * Dies ist der finale Preis, den jede Person zahlt (Kraftstoffanteil + Plattformgebühr)
+                      * Dies ist der finale Preis, den jede Person zahlt (Kraftstoffanteil + Plattformgebühr + Versicherungszuschlag)
                     </p>
                   </div>
                 </div>
