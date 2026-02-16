@@ -1,0 +1,76 @@
+{
+  "name": "JoinUs - Fahrgemeinschafts-Plattform",
+  "short_name": "JoinUs",
+  "description": "Nachhaltige und kosteneffiziente Mobilität für alle. Finde Fahrgemeinschaften oder biete selbst Fahrten an.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "de-DE",
+  "dir": "ltr",
+  "categories": ["travel", "lifestyle", "social"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Fahrt suchen",
+      "short_name": "Suchen",
+      "description": "Schnell eine Fahrt finden",
+      "url": "/?action=search",
+      "icons": [{ "src": "/icon-search.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Fahrt anbieten",
+      "short_name": "Anbieten",
+      "description": "Eigene Fahrt anbieten",
+      "url": "/?action=offer",
+      "icons": [{ "src": "/icon-offer.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Meine Fahrten",
+      "short_name": "Fahrten",
+      "description": "Gebuchte Fahrten anzeigen",
+      "url": "/?action=rides",
+      "icons": [{ "src": "/icon-rides.png", "sizes": "96x96" }]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "related_applications": [],
+  "prefer_related_applications": false
+}
